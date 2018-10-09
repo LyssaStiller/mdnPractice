@@ -89,9 +89,14 @@
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CoOWQDQ-lEw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
+
+        <video controls>
+          <source src="rabbit320.mp4" type="video/mp4">
+          <p>If you don't see a video your browser isn't supporting you. Make better life choices</p>
+        </video>
 
         <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
@@ -99,7 +104,10 @@
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
+        <img srcset ="dinoHead120.jpg 120w, dinoHead400.jpg 400w, firefox-addons120.jpg 120w, firefox-addons400.jpg 400w"
+
+        sizes= "(max-width: 480px) 120px
+                (min-width: 481px) 400px">
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img>
         </a>
@@ -116,7 +124,10 @@
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 799px)" srcset="red-pandaPortrait.jpg">
+          <source media="(mix-width: 800px)" srcset="red-pandLandscape.jpg">
+        </picture>
       </div>
 
     </main>
