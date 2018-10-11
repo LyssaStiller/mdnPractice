@@ -82,7 +82,7 @@ resetBtn.addEventListener('click', function(){
 })
 
 
-
+console.log("hello")
 
 //first attempt, doesn't work
 // var time = 0;
