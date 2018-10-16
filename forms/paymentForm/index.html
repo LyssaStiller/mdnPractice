@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="stillerCodes">
+    <title>Payment Form</title>
+    <link href="payment-form.css" type="text/css" rel="stylesheet">
+
+  </head>
+  <body>
+      <form>
+        <h1>Payment Information</h1>
+        <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+        <section>
+          <h2>Contact information</h2>
+          <fieldset>
+            <legend>Title</legend>
+            <ul>
+              <li>
+                <label for="title_1">
+                  <input type="radio" id="title_1" name="title">
+                  Mister
+                </label>
+              </li>
+              <li>
+                <label for="title_2">
+                  <input type="radio" id="title_2" name="title">Miss
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="name">
+              <span>Name: </span>
+              <strong><abbr title="required">*</abbr></strong>
+              <input type="text" id="name" name="username">
+            </label>
+          </p>
+          <p>
+            <label for="mail">
+              <span>E-mail: </span>
+              <strong><abbr title="required">*</abbr></strong>
+              <input type="text" id="mail" name="usermail">
+            </label>
+          </p>
+          <p>
+            <label for="pwd">
+              <span>Password: </span>
+              <strong><abbr title="required">*</abbr></strong>
+              <input type="password" id="pwd" name="password">
+            </label>
+          </p>
+        </section>
+        <section>
+          <h2>Payment information</h2>
+          <p>
+            <label for="card">
+              <span>Card type: </span>
+            </label>
+            <select id="card" name="usercard">
+              <option value="visa">VISA</option>
+              <option value="mc">Mastercard</option>
+              <option value="amex">Amercian Express</option>
+              <option value="Discover">Discover</option>
+            </select>
+          </p>
+          <p>
+            <label for="number">
+              <span>Card number: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="number" name="cardnumber">
+          </p>
+          <p>
+            <label for="exp-date">
+              <span>Expiration Date: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="exp-date" name="expiration">
+          </p>
+        </section>
+        <p><button type="submit">Validate payment info</button></p>
+      </form>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset ="UTF-8">
+    <meta name="author" content="stillerCodes">
+    <meta name="description" content="practicing forms">
+    <title>Forms for fun</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </header>
+  <body>
+    <h1>Practicing Forms</h1>
+      <form action="/page-that-handles-forms" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="text" id="email" name="user_mail">
+          </div>
+          <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">submit a message!</button>
+          </div>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Fruit juice size</legend>
+          <p>
+            <input type="radio" name="size" id="size_1" value="small">
+            <label for="size_1">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_2" value="medium">
+            <label for="size_2">Medium</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_3" value="large">
+            <label for="size_3">Large</label>
+          </p>
+        </fieldset>
+      </form>
+  </body>
+</html>
